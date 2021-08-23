@@ -1,0 +1,19 @@
+{
+  "name": "chrome-extension-svelte",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "svelteup -w",
+    "build": "svelteup"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "svelte": "^3.0.0"
+  },
+  "devDependencies": {
+    "svelteup": "^1.0.0"
+  }
+}
+
