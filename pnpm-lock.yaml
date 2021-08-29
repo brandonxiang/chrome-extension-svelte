@@ -1,7 +1,9 @@
 dependencies:
   svelte: 3.42.2
 devDependencies:
-  svelteup: 1.0.3
+  fs-extra: 10.0.0
+  svelteup: 1.0.4
+  tempura: 0.3.2
 lockfileVersion: 5.2
 packages:
   /@polka/url/1.0.0-next.17:
@@ -70,6 +72,16 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-qOo9F+dMUmC2Lcb4BbVvnKJxTPjCm+RRpe4gDuGrzkL7mEVl/djYSu2OdQ2Pa302N4oqkSg9ir6jaLWJ2USVpQ==
+  /fs-extra/10.0.0:
+    dependencies:
+      graceful-fs: 4.2.8
+      jsonfile: 6.1.0
+      universalify: 2.0.0
+    dev: true
+    engines:
+      node: '>=12'
+    resolution:
+      integrity: sha512-C5owb14u9eJwizKGdchcDUQeFtlSHHthBk8pbX9Vc1PFZrLombudjDnNns88aYslCyF6IY5SUw3Roz6xShcEIQ==
   /fsevents/2.3.2:
     dev: true
     engines:
@@ -87,6 +99,10 @@ packages:
       node: '>= 6'
     resolution:
       integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==
+  /graceful-fs/4.2.8:
+    dev: true
+    resolution:
+      integrity: sha512-qkIilPUYcNhJpd33n0GBXTB1MMPp14TxEsEs0pTrsSVucApsYzW5V+Q8Qxhik6KU3evy+qkAAowTByymK0avdg==
   /is-binary-path/2.1.0:
     dependencies:
       binary-extensions: 2.2.0
@@ -115,6 +131,14 @@ packages:
       node: '>=0.12.0'
     resolution:
       integrity: sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==
+  /jsonfile/6.1.0:
+    dependencies:
+      universalify: 2.0.0
+    dev: true
+    optionalDependencies:
+      graceful-fs: 4.2.8
+    resolution:
+      integrity: sha512-5dgndWOriYSm5cnYaJNhalLNDKOqFwyDB/rr1E9ZsGciGvKPs8R2xYGCacuf3z6K1YKDz182fd+fY3cn3pMqXQ==
   /livereload-js/3.3.2:
     dev: true
     resolution:
@@ -191,7 +215,7 @@ packages:
       node: '>= 8'
     resolution:
       integrity: sha512-FOyNYKXb8wdE0Ot+Ctt2/OyDLsNBP8+V6PUE9ag6ZKeLslIou0LnMu1fhtWUA+HjzKTbAM1yj+4PFLtg/3pMJA==
-  /svelteup/1.0.3:
+  /svelteup/1.0.4:
     dependencies:
       esbuild: 0.12.22
       esbuild-svelte: 0.5.4_esbuild@0.12.22
@@ -202,7 +226,13 @@ packages:
     dev: true
     hasBin: true
     resolution:
-      integrity: sha512-5ljrh8+qg6GFpxFVMADhNE3BSySgTk1rQP25O9G7IZjPdM+xFOi8so74Er6UHgl3y5z8ZW4KaQUSD+efdg0Erw==
+      integrity: sha512-/Js5Pty/yKOKbiXaZ4P+slkyTi5buzCnSpipJOAwFlOurZA2o9CGYadguHSmg1vgr2POBHW6Dq8uj1m9hg8XpA==
+  /tempura/0.3.2:
+    dev: true
+    engines:
+      node: '>=10'
+    resolution:
+      integrity: sha512-Gm5VpRLxAQWTec2WalfqYXqjpXnvU95Us0vYTcBCwbwL9ZkVtVKqM4///uxa0n4rHSfSG9Ws9WzgOLsvdcpydQ==
   /to-regex-range/5.0.1:
     dependencies:
       is-number: 7.0.0
@@ -217,6 +247,12 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-gduQwd1rOdDMGxFG1gEvhV88Oirdo2p+KjoYFU7k2g+i7n6AFFbDQ5kMPUsW0pNbfQsB/cwXvT1i4Bue0s9g5g==
+  /universalify/2.0.0:
+    dev: true
+    engines:
+      node: '>= 10.0.0'
+    resolution:
+      integrity: sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==
   /ws/7.5.3:
     dev: true
     engines:
@@ -232,5 +268,7 @@ packages:
     resolution:
       integrity: sha512-kQ/dHIzuLrS6Je9+uv81ueZomEwH0qVYstcAQ4/Z93K8zeko9gtAbttJWzoC5ukqXY1PpoouV3+VSOqEAFt5wg==
 specifiers:
+  fs-extra: ^10.0.0
   svelte: ^3.0.0
-  svelteup: ^1.0.0
+  svelteup: ^1.0.4
+  tempura: ^0.3.2

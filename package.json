@@ -2,9 +2,12 @@
   "name": "chrome-extension-svelte",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "scripts": {
-    "dev": "svelteup -w",
-    "build": "svelteup"
+    "dev": "node scripts/dev.js && npm run serve",
+    "serve": "svelteup -s dev -o dev/bundle",
+    "build": "node scripts/build.js && npm run bundle",
+    "bundle": "svelteup -o dist/bundle"
   },
   "keywords": [],
   "author": "",
@@ -13,7 +16,9 @@
     "svelte": "^3.0.0"
   },
   "devDependencies": {
-    "svelteup": "^1.0.0"
+    "svelteup": "^1.0.4",
+    "tempura": "^0.3.2",
+    "fs-extra": "^10.0.0"
   }
 }
 
